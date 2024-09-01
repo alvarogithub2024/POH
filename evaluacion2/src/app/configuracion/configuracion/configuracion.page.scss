@@ -1,0 +1,80 @@
+#container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+h2 {
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+}
+
+p {
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+em {
+  font-style: italic;
+  color: #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e53935;
+}
+
+button:focus {
+  outline: none;
+}
+
+p + button {
+  margin-top: 20px;
+  background-color: #2196F3;
+}
+
+p + button:hover {
+  background-color: #1e88e5;
+}
+
+p *ngIf {
+  color: #ddd;
+  font-size: 16px;
+}

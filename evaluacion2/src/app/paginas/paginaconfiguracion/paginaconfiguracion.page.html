@@ -1,0 +1,29 @@
+<h3>Agregar una nueva Frase</h3>
+<form (submit)="agregarNuevaFrase()">
+  <div>
+    <label for="cita">Cita:</label>
+    <input
+      id="cita"
+      [(ngModel)]="nuevaFrase.cita"
+      name="cita"
+      required
+    />
+    <div *ngIf="citaError">
+      <small style="color: red;">{{ citaError }}</small>
+    </div>
+  </div>
+  <div>
+    <label for="autor">Autor:</label>
+    <input
+      id="autor"
+      [(ngModel)]="nuevaFrase.autor"
+      name="autor"
+      required
+    />
+    <div *ngIf="autorError">
+      <small style="color: red;">{{ autorError }}</small>
+    </div>
+  </div>
+  <button type="submit">Agregar Frase</button>
+</form>
+<button (click)="irAConfiguracion()" class="btn-configuracion">Ir a Configuración</button>

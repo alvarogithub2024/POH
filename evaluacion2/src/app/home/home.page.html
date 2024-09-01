@@ -1,0 +1,11 @@
+<div *ngIf="fraseActual">
+  <p>{{ fraseActual.cita }}</p>
+  <p><em>- {{ fraseActual.autor }}</em></p>
+</div>
+<div>
+<button (click)="obtenerFraseAleatoria()">Frase Aleatoria</button>
+<div>
+  <p>Si quieres Agregar una nueva frase haz click al boton agregar una nueva frase</p>
+</div>
+<button (click)="irAPaginasConfiguracion()">Agregar una nueva Frase</button>
+</div>

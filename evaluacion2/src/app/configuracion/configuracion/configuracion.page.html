@@ -1,0 +1,14 @@
+<div id="container">
+  <h2>Página de Configuración</h2>
+
+  <h3>Citas Actuales</h3>
+  <ul>
+    <li *ngFor="let frase of frases">
+      <p>{{ frase.cita }} <em>- {{ frase.autor }}</em></p>
+      <button (click)="eliminarFrase(frase)">Eliminar</button>
+    </li>
+  </ul>
+
+  <p *ngIf="frases.length === 0">No hay citas disponibles.</p>
+  <button (click)="volverHome()" class="btn-configuracion">Volver al Inicio</button>
+</div>

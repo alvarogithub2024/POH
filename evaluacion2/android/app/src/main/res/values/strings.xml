@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">evaluacion2</string>
+    <string name="title_activity_main">evaluacion2</string>
+    <string name="package_name">ionic.evaluacion2</string>
+    <string name="custom_url_scheme">ionic.evaluacion2</string>
+</resources>
